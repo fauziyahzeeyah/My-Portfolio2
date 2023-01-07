@@ -47,7 +47,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](  https://fauziyahzeeyah.github.io/My-Portfolio2/)
+- [Live Demo Link](https://fauziyahzeeyah.github.io/My-Portfolio2/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
