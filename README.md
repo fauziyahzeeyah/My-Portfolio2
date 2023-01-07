@@ -61,6 +61,7 @@ In order to run this project you need:
 - A computer or a Mobile phone
 - Internet connection 
 - Web browser
+- An IDE
 
 ### Setup
 
