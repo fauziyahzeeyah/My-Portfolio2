@@ -150,6 +150,11 @@ textarea {
   gap: 12px;
 }
 
+h1:hover {
+  color: #2230d2;
+  font-size: 45px;
+}
+
 .intro-title {
   font-size: 40px;
   line-height: 52px;
@@ -580,7 +585,7 @@ textarea {
 
   .header-menu-button:hover div {
     background-color: transparent;
-    color: #172b4d;
+    color: skyblue;
   }
 
   .headline {
