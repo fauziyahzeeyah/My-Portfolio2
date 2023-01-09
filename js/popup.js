@@ -1,11 +1,11 @@
-const projectCover = document.querySelector('#cards');
+const cover = document.querySelector('#cards');
 const modal = document.querySelector('#modal');
 const closeModal = document.querySelector('#close-modal');
 const modalContent = document.querySelector('#modal-content');
 
 closeModal.addEventListener('click', () => modal.classList.add('hidden'));
 
-const projects = [
+const development = [
   {
     id: 1,
     title: 'Tonic',
@@ -17,7 +17,7 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: '1stimg.png',
-    languages: ['html', 'css', 'javaScript'],
+    languages: ['html', 'css', 'javaScript', 'Ruby'],
     liveVersion: 'https://fauziyahzeeyah.github.io/port-folio-mobile/',
     source: 'https://github.com/fauziyahzeeyah/port-folio-mobile',
   },
@@ -32,7 +32,7 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: '2ndimg.png',
-    languages: ['html', 'css', 'javaScript'],
+    languages: ['html', 'css', 'javaScript', 'Ruby'],
     liveVersion: 'https://fauziyahzeeyah.github.io/port-folio-mobile/',
     source: 'https://github.com/fauziyahzeeyah/port-folio-mobile',
   },
@@ -47,7 +47,7 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: '3rdimg.png',
-    languages: ['html', 'css', 'javaScript'],
+    languages: ['html', 'css', 'javaScript', 'Ruby'],
     liveVersion: 'https://fauziyahzeeyah.github.io/port-folio-mobile/',
     source: 'https://github.com/fauziyahzeeyah/port-folio-mobile',
   },
@@ -62,13 +62,13 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: '4thimg.png',
-    languages: ['html', 'css', 'javaScript'],
+    languages: ['html', 'css', 'javaScript', 'Ruby'],
     liveVersion: 'https://fauziyahzeeyah.github.io/port-folio-mobile/',
     source: 'https://github.com/fauziyahzeeyah/port-folio-mobile',
   },
 ];
 
-projects.forEach((project) => {
+development.forEach((development) => {
   const div = document.createElement('div');
   div.classList.add('card');
 
@@ -77,54 +77,54 @@ projects.forEach((project) => {
     return x;
   }
 
-  const languages = project.languages.reduce(sequenceString, '');
-  const buttonId = `see-project-${project.id}`;
+  const languages = development.languages.reduce(sequenceString, '');
+  const buttonId = `see-project-${development.id}`;
 
   div.innerHTML = `
   <div class="card-picture">
-    <img src="images/cards/${project.featuredImage}" alt="Tonic" />
+    <img src="images/cards/${development.featuredImage}" alt="Tonic" />
   </div>
   <div class="card-elements">
-    <h3 class="card-title">${project.title}</h3>
+    <h3 class="card-title">${development.title}</h3>
     <div class="card-specs">
-      <div class="specs_client">${project.company}</div>
+      <div class="specs_client">Canopy</div>
       <div class="dot"></div>
-      <div class="specs_role">${project.position}</div>
+      <div class="specs_role">Back End dev</div>
       <div class="dot"></div>
-      <div class="specs_year">${project.year}</div>
+      <div class="specs_year">2015</div>
     </div>
-    <p class="card-description">${project.shortDescription}</p>
+    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
     <ul class="card-techs">
       ${languages}
     </ul>
-    <button class="card-button" id="${buttonId}">See Project</button>
+    <button class="card-button" id="see-project-${development.id}">See Project</button>
   </div>
   `;
 
-  projectCover.appendChild(div);
+  cover.appendChild(div);
 
-  const projectButton = document.querySelector(`#${buttonId}`);
+  const developmentButton = document.querySelector(`#${buttonId}`);
 
-  projectButton.addEventListener('click', () => {
+  developmentButton.addEventListener('click', () => {
     modalContent.innerHTML = `
-      <h3 class="card-title">${project.title}</h3>
+      <h3 class="card-title">${development.title}</h3>
 
       <div class="card-specs">
-        <div class="specs_client">${project.company}</div>
+        <div class="specs_client">Canopy</div>
         <div class="dot"></div>
-        <div class="specs_role">${project.position}</div>
+        <div class="specs_role">Back End dev</div>
         <div class="dot"></div>
-        <div class="specs_year">${project.year}</div>
+        <div class="specs_year">2015</div>
       </div>
 
       <div class="card-picture">
-        <img src="images/cards/${project.featuredImage}" alt="Multi-Post stories" />
+        <img src="images/cards/${development.featuredImage}" alt="Multi-Post stories" />
       </div>
 
       <div class="popup-description">
 
         <p class="card-description">
-          ${project.description}
+          A daily selection of privately personalized reads; no accounts or sign-ups required.
         </p>
 
         <div class="modal-footer">
@@ -135,11 +135,11 @@ projects.forEach((project) => {
 
           <div class="card-bar"></div>
           <div class="footer-buttons">
-            <button class="card-button" onClick="location.href='${project.liveVersion}'">
+            <button class="card-button" onClick="location.href='${development.liveVersion}'">
               See live
               <i class="fa-regular fa-arrow-up-right-from-square" alt="live-version icon"></i>
             </button>
-            <button class="card-button" onClick="location.href='${project.source}'">
+            <button class="card-button" onClick="location.href='${development.source}'">
               See Source
               <img src="./images/github.svg" alt=github-icon>
             </button>
