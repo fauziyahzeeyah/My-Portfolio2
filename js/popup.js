@@ -1,7 +1,7 @@
-const developmentCover = document.querySelector('#cards');
-const modal = document.querySelector('#modal');
-const closeModal = document.querySelector('#close-modal');
-const modalContent = document.querySelector('#modal-content');
+var cover = document.querySelector("#cards");
+var modal = document.querySelector('#modal');
+var closeModal = document.querySelector('#close-modal');
+var modalContent = document.querySelector('#modal-content');
 
 closeModal.addEventListener('click', () => modal.classList.add('hidden'));
 
@@ -101,7 +101,7 @@ development.forEach((development) => {
   </div>
   `;
 
-  developmentCover.appendChild(div);
+  cover.appendChild(div);
 
   const developmentButton = document.querySelector(`#${buttonId}`);
 

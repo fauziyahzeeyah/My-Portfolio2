@@ -253,6 +253,17 @@ h1:hover {
   border-radius: 8px;
 }
 
+   @keyframes drop {
+
+    from {
+      margin-top: -100%;
+    }
+
+    to {
+      margin-top: 0%;
+    }
+  }
+
 .card-picture > img {
   width: 100%;
 }
@@ -648,6 +659,18 @@ h1:hover {
 
   .card-picture {
     width: 50%;
+    animation: 2s drop;
+  }
+
+    @keyframes drop {
+
+    from {
+      margin-top: -100%;
+    }
+
+    to {
+      margin-top: 0%;
+    }
   }
 
   .card-picture img:hover {
