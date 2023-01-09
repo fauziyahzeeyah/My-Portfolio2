@@ -494,6 +494,9 @@ h1:hover {
 .mobile-menu__close > img {
   cursor: pointer;
   user-select: none;
+  font-size: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .popup {
@@ -517,10 +520,10 @@ h1:hover {
 
 .close-modal {
   position: absolute;
-  right: 500px;
-  top: 50px;
+  right: 50px;
+  top: 30px;
+  font-size: 40px;
   cursor: pointer;
-  user-select: none;
 }
 
 .modal-content {
@@ -751,6 +754,8 @@ h1:hover {
   .close-modal {
     right: 230px;
     top: 100px;
+    font-size: 40px;
+    cursor: pointer;
   }
 
   .modal-content > .card-picture {
