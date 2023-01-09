@@ -253,16 +253,15 @@ h1:hover {
   border-radius: 8px;
 }
 
-   @keyframes drop {
-
-    from {
-      margin-top: -100%;
-    }
-
-    to {
-      margin-top: 0%;
-    }
+@keyframes drop {
+  from {
+    margin-top: -100%;
   }
+
+  to {
+    margin-top: 0%;
+  }
+}
 
 .card-picture > img {
   width: 100%;
@@ -662,8 +661,7 @@ h1:hover {
     animation: 2s drop;
   }
 
-    @keyframes drop {
-
+  @keyframes drop {
     from {
       margin-top: -100%;
     }

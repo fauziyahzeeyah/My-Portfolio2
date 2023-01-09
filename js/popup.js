@@ -1,7 +1,7 @@
-var cover = document.querySelector("#cards");
-var modal = document.querySelector('#modal');
-var closeModal = document.querySelector('#close-modal');
-var modalContent = document.querySelector('#modal-content');
+const cover = document.querySelector('#cards');
+const modal = document.querySelector('#modal');
+const closeModal = document.querySelector('#close-modal');
+const modalContent = document.querySelector('#modal-content');
 
 closeModal.addEventListener('click', () => modal.classList.add('hidden'));
 
